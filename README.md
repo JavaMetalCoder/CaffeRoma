@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# CoffeeShop
-=======
+
 # ☕ Coffee Shop Roma
 
 Sito web vetrina sviluppato per esercizio personale.  
@@ -54,5 +52,4 @@ Rappresenta un finto coffee shop situato a Roma, progettato per esercitarmi con 
 
 - Form di contatto o prenotazione
 
->>>>>>> 0569081 (fix: change repo)
-# CaffeRoma
+
