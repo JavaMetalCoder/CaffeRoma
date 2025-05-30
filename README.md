@@ -6,7 +6,7 @@ Rappresenta un finto coffee shop situato a Roma, progettato per esercitarmi con 
 
 ---
 
-## 📌 Obiettivi del progetto
+## 📌 Obiettivi del progetto 
 
 - Creare un sito statico con HTML e CSS puri
 - Imparare a gestire il layout con **Flexbox**
