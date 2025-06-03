@@ -44,11 +44,11 @@ Rappresenta un finto coffee shop situato a Roma, progettato per esercitarmi con 
 🔧 Da migliorare in futuro
 - Adattamento responsive con media query
 
-- Effetti hover e animazioni
+- Effetti hover e animazioni,
 
-- Integrazione immagini reali
+- Integrazione immagini reali,
 
-- Footer con link e contatti
+- Footer con link e contatti,
 
 - Form di contatto o prenotazione
 
