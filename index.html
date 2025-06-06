@@ -1,86 +1,90 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caffè Roma</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caffè Roma</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+</head>
+<body>
 
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <header>
+    <div class="container">
+      <h1>Caffè Roma</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#galleria">Galleria</a></li>
+          <li><a href="#prodotti">Prodotti</a></li>
+          <li><a href="#contatti">Contattaci</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
-  </head>
-  <body class="bg-neutral-50 text-gray-800 font-sans">
+  <section class="hero" data-aos="fade-up">
+    <div>
+      <img src="media/caffe-hero.png" alt="caffè">
+      <p>
+        Nuovo Coffee Shop a Roma, zona Aurelio. <br>
+        Disponibili prenotazioni e consegne a domicilio.
+      </p>
+    </div>
+  </section>
 
-    <!-- NAVBAR -->
-    <header class="bg-orange-500 text-white shadow">
-      <div class="container mx-auto flex justify-between items-center p-4">
-        <h1 class="text-2xl font-bold">Caffè Roma</h1>
-        <nav>
-          <ul class="flex gap-6 text-sm font-semibold">
-            <li><a href="#" class="hover:text-yellow-200">Home</a></li>
-            <li><a href="#galleria" class="hover:text-yellow-200">Galleria</a></li>
-            <li><a href="#prodotti" class="hover:text-yellow-200">Prodotti</a></li>
-            <li><a href="#contatti" class="hover:text-yellow-200">Contattaci</a></li>
-          </ul>
-        </nav>
+  <section id="galleria">
+    <h2>Galleria – Locale</h2>
+    <div class="scroll">
+      <img src="media/caffe.roma.esterno.png" alt="Esterno 1" class="gallery-img">
+      <img src="media/caffe.roma.esterno2.png" alt="Esterno 2" class="gallery-img">
+      <img src="media/caffe.interno.png" alt="Interno 1" class="gallery-img">
+      <img src="media/caffe.interno2.png" alt="Interno 2" class="gallery-img">
+    </div>
+  </section>
+
+  <section id="prodotti">
+    <h2>I Nostri Prodotti</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="media/espresso.png" alt="Espresso">
+        <h3>Espresso Classico</h3>
       </div>
-    </header>
-
-    <!-- HERO -->
-    <section class="bg-yellow-50 py-16">
-      <div class="container mx-auto px-4 text-center" data-aos="fade-up">
-        <img src="media/caffe-hero.png" alt="caffè" class="mx-auto w-full max-w-3xl rounded-lg shadow-md mb-6 transition-transform hover:scale-105">
-        <p class="text-xl text-gray-700">
-          Nuovo Coffee Shop a Roma, zona Aurelio. <br>
-          Disponibili prenotazioni e consegne a domicilio.
-        </p>
+      <div class="product-card">
+        <img src="media/cappuccino.png" alt="Cappuccino">
+        <h3>Cappuccino Cremoso</h3>
       </div>
-    </section>
-
-    <!-- GALLERIA -->
-    <section id="galleria" class="bg-white py-12">
-      <h2 class="text-3xl font-semibold text-center mb-8">Galleria – Locale</h2>
-      <div class="overflow-x-auto whitespace-nowrap px-6 scroll-smooth">
-        <div class="inline-flex gap-4">
-          <img src="media/caffe.roma.esterno.png" alt="Esterno 1" class="w-72 h-96 object-cover rounded-lg shadow-md hover:scale-105 transition-transform">
-          <img src="media/caffe.roma.esterno2.png" alt="Esterno 2" class="w-72 h-96 object-cover rounded-lg shadow-md hover:scale-105 transition-transform">
-          <img src="media/caffe.interno.png" alt="Interno 1" class="w-72 h-96 object-cover rounded-lg shadow-md hover:scale-105 transition-transform">
-          <img src="media/caffe.interno2.png" alt="Interno 2" class="w-72 h-96 object-cover rounded-lg shadow-md hover:scale-105 transition-transform">
-        </div>
+      <div class="product-card">
+        <img src="media/cornetto.png" alt="Cornetto">
+        <h3>Cornetto alla Nutella</h3>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PRODOTTI LOCALE -->
-    <section id="prodotti" class="bg-gray-100 py-16">
-      <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-6">I Nostri Prodotti</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
-          <div class="bg-white p-4 rounded shadow hover:shadow-lg transition-shadow">
-            <img src="media/espresso.png" alt="Espresso" class="w-full h-48 object-cover rounded mb-2">
-            <h3 class="text-lg font-semibold">Espresso Classico</h3>
-          </div>
-          <div class="bg-white p-4 rounded shadow hover:shadow-lg transition-shadow">
-            <img src="media/cappuccino.png" alt="Cappuccino" class="w-full h-48 object-cover rounded mb-2">
-            <h3 class="text-lg font-semibold">Cappuccino Cremoso</h3>
-          </div>
-          <div class="bg-white p-4 rounded shadow hover:shadow-lg transition-shadow">
-            <img src="media/cornetto.png" alt="Cornetto" class="w-full h-48 object-cover rounded mb-2">
-            <h3 class="text-lg font-semibold">Cornetto alla Nutella</h3>
-          </div>
-        </div>
-      </div>
-    </section>
+  <section class="form-section" id="contatti-form">
+    <form class="contact-form" action="#" method="POST">
+      <h2>Contattaci</h2>
+  
+      <label for="name">Nome</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Messaggio</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+  
+      <button type="submit">Invia</button>
+    </form>
+  </section>
+  
 
-    <!-- CONTATTI / FOOTER -->
-    <footer id="contatti" class="bg-orange-500 text-white text-center py-6 mt-10">
-      <p class="text-sm mb-1">&copy; 2025 Caffè Roma – Creato da MetalCoder</p>
-      <p class="text-xs">Contattami su Instagram: <a href="https://www.instagram.com/metalcoder.hub?igsh=MTZlcnRnNHN3dm9zZg==" class="underline">caffe_roma</a></p>
-    </footer>
+  <footer id="contatti">
+    <p>&copy; 2025 Caffè Roma – Creato da MetalCoder</p>
+    <p>Contattami su Instagram: <a href="https://www.instagram.com/metalcoder.hub?igsh=MTZlcnRnNHN3dm9zZg==" class="underline">caffe_roma</a></p>
+  </footer>
 
-    <!-- SCRIPT AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>AOS.init();</script>
-  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
 </html>
